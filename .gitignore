@@ -1,0 +1,11 @@
+#Ignore these directories
+_aux/
+node_modules/
+
+#Ignore these files
+.DS_Store
+config.json
+private.json
+secret.json
+
+
