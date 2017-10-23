@@ -1,0 +1,194 @@
+@media only screen and (max-width: 540px) {
+  .projects {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+@media only screen and (min-width: 541px) {
+  .projects {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .projects {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  .projects {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+body {
+  font-family: "Varela", 'Arial', sans-serif;
+  font-size: 1em;
+  background-color: #ddd;
+  color: #404040;
+  margin: auto;
+}
+
+#main {}
+
+
+/* NAVBAR */
+
+#navbar {
+  font-family: "Chewy", 'Arial', sans-serif;
+  width: 100%;
+  position: fixed;
+  font-size: 1.5em;
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  color: #ddd;
+}
+
+#navbar a {
+  color: #ddd;
+}
+
+#navbar a:hover {
+  color: lightblue;
+}
+
+.left {
+  padding-left: 5%;
+}
+
+.right {
+  padding-right: 5%;
+}
+
+.menu {
+  padding: 0px 20px;
+}
+
+
+/* WELCOME */
+
+#welcome-section {
+  font-family: "Chewy", 'arial', sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-top: 50px;
+  text-align: center;
+  color: #ddd;
+  background: url("/_assets/images/portfolio.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 50px);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+#welcome-section h1 {
+  padding-top: 20%;
+}
+
+.welcome-text {
+  padding: 0 10%;
+}
+
+
+/* PROJECTS*/
+
+h2 {
+  font-family: "Chewy", 'Arial', sans-serif;
+  text-align: center;
+}
+
+.projects {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  -moz-column-gap: 0.5em;
+  -webkit-column-gap: 0.5em;
+  column-gap: 0.5em;
+}
+
+.project-tile {
+  display: inline-block;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  max-width: 240px;
+}
+
+.tile-image {
+  max-width: 100%;
+}
+
+.desc {
+  font-size: .85em;
+}
+
+
+/* CONTACT */
+
+#contact {
+  text-align: center;
+  background-color: burlywood;
+  padding: 10px 0px;
+}
+
+#contact strong {
+  padding-right: 40px;
+}
+
+#contact img {
+  max-height: 32px;
+  vertical-align: middle;
+}
+
+#contact a {
+  padding: 0px 5px;
+}
+
+
+/* GENERIC */
+
+.imgV {
+  vertical-align: middle;
+}
+
+.imgH {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
