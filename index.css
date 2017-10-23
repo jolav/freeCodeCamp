@@ -1,0 +1,97 @@
+body {
+  font-family: "Open Sans", "arial", sans-serif;
+  background-color: #eee;
+  font-size: 1em;
+  color: #404040;
+  margin: auto;
+  max-width: 960px;
+}
+
+
+/* HEAD */
+
+h1 {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fccLogo {
+  max-height: 40px;
+}
+
+.add {
+  padding: 0px 20px;
+}
+
+
+/* BODY */
+
+.old {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.projects {
+  font-size: 0.9em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+ul li .cert {
+  text-decoration: underline;
+}
+
+ul {
+  text-align: center;
+  /* to avoid bullets */
+  display: inline;
+  /* Chrome numbers of ol inside text */
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+a.not {
+  pointer-events: none;
+  text-decoration: line-through;
+  color: #404040 !important;
+}
+
+
+/* GENERIC */
+
+.imgV {
+  vertical-align: middle;
+}
+
+.imgH {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}

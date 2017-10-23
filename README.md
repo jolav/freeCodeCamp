@@ -1,18 +1,19 @@
-<center>
 
-# [CURRICULUM](https://www.freecodecamp.org/jolav)
+# [DEMO ONLINE](https://freecodecamp.codetabs.com)
 
-## **FRONTEND**
+### **OLD CURRICULUM**
+
+* **FRONTEND**  
 
 | BASIC | INTERMEDIATE | ADVANCED |
 | :---:         |     :---:      |          :---: |
-| ~~[Tribute Page]()~~ | ~~[Random Quote Machine]()~~ | ~~[Javascript Calculator]()~~ |
+| [Tribute Page](https://freecodecamp.codetabs.com/old/front-end/tribute/tribute.html) | ~~[Random Quote Machine]()~~ | ~~[Javascript Calculator]()~~ |
 | ~~[Portfolio]()~~ | ~~[Local Weather]()~~ | ~~[Pomodoro Clock]()~~ |
 | ~~[Basic algorithm]()~~ | ~~[Wikipedia Viewer]()~~ | ~~[Tic Tac Toe Game]()~~ |
 | | ~~[Twitch.tv API]()~~ | ~~[Simon Game]()~~ |
 | |  ~~[Intermediate]()~~ |
 
-## **DATA VISUALIZATION**
+* **DATA VISUALIZATION**
 
 | REACT | DATA |
 | :---: | :---: | 
@@ -22,7 +23,7 @@
 | ~~[Game of Life]()~~ | ~~[National Contiguity with Force Directed Graph]()~~ |
 | ~~[Roguelike Dungeon Game]()~~ | ~~[Map Data Across the Globe]()~~ |
 
-## **BACKEND**
+* **BACKEND**
 
 | APIs | WEB APPS |
 | :---: | :---: | 
@@ -32,6 +33,5 @@
 | ~~[Image Search Abstraction Layer]()~~ | ~~[Manage Book Trading Club]()~~ |
 | ~~[File Metadata]()~~ | ~~[Pinterest Clone]()~~ |
 
-</center>
 
 

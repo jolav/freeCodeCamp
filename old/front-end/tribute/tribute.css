@@ -1,0 +1,107 @@
+@media (max-width: 640px) {
+  #image {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 641px) {
+  #image {
+    max-width: 60%;
+  }
+}
+
+body {
+  font-family: "Varela", "arial", sans-serif;
+  background-color: #fafafa;
+  font-size: 0.90em;
+  color: #404040;
+  margin: auto;
+  max-width: 960px;
+}
+
+#main {
+  margin: 10px 5%;
+  padding: 10px 0px 10px 0px;
+  background-color: #eee;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#image {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  max-width: 90%;
+}
+
+#tribute-info {
+  font-size: 0.9em;
+}
+
+.index {
+  display: flex;
+  justify-content: center;
+}
+
+#tribute-link {
+  border: 1px solid lightblue;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.link {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* GENERIC */
+
+.imgV {
+  vertical-align: middle;
+}
+
+.imgH {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+a:hover {
+  color: white;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
