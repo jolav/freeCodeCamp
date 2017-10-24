@@ -8,7 +8,7 @@
 | BASIC | INTERMEDIATE | ADVANCED |
 | :---:         |     :---:      |          :---: |
 | [Tribute Page](https://freecodecamp.codetabs.com/old/front-end/tribute/tribute.html) | ~~[Random Quote Machine]()~~ | ~~[Javascript Calculator]()~~ |
-| ~~[Portfolio]()~~ | ~~[Local Weather]()~~ | ~~[Pomodoro Clock]()~~ |
+| [Portfolio](https://freecodecamp.codetabs.com/old/front-end/portfolio/portfolio.html) | ~~[Local Weather]()~~ | ~~[Pomodoro Clock]()~~ |
 | ~~[Basic algorithm]()~~ | ~~[Wikipedia Viewer]()~~ | ~~[Tic Tac Toe Game]()~~ |
 | | ~~[Twitch.tv API]()~~ | ~~[Simon Game]()~~ |
 | |  ~~[Intermediate]()~~ |
