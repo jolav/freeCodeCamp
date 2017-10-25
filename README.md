@@ -9,9 +9,9 @@
 | :---:         |     :---:      |          :---: |
 | [Tribute Page](https://freecodecamp.codetabs.com/old/front-end/tribute/tribute.html) | ~~[Random Quote Machine]()~~ | ~~[Javascript Calculator]()~~ |
 | [Portfolio](https://freecodecamp.codetabs.com/old/front-end/portfolio/portfolio.html) | ~~[Local Weather]()~~ | ~~[Pomodoro Clock]()~~ |
-| ~~[Basic algorithm]()~~ | ~~[Wikipedia Viewer]()~~ | ~~[Tic Tac Toe Game]()~~ |
+| [Basic algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) | ~~[Wikipedia Viewer]()~~ | ~~[Tic Tac Toe Game]()~~ |
 | | ~~[Twitch.tv API]()~~ | ~~[Simon Game]()~~ |
-| |  ~~[Intermediate]()~~ |
+| | [Intermediate Algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |
 
 * **DATA VISUALIZATION**
 
