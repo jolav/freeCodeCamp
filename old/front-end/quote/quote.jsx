@@ -5,7 +5,6 @@ let globalVar = {};
 
 const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=writeRes';
 
-
 class QuoteBox extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +12,7 @@ class QuoteBox extends React.Component {
       quoteData: []
     };
   }
-  componentWillMount() {    
+  componentWillMount() {
     globalVar.callback = (data) => {
       this.setState({ quoteData: data });
     };

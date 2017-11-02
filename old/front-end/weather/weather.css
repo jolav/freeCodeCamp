@@ -1,0 +1,52 @@
+@media (max-width: 640px) {}
+
+@media (min-width: 641px) {}
+
+body {
+  font-family: "Titillium Web", "arial", sans-serif;
+  font-weight: bold;
+  background-color: #eee;
+  color: #404040;
+  font-size: 1em;
+  text-align: center;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.changeTemp:hover {
+  background-color: #404040;
+  color: #cce5ff;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+/* GENERIC */
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}

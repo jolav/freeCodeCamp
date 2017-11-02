@@ -1,7 +1,26 @@
+@media only screen and (max-width: 681px) {
+  .big {
+    display: none
+  }
+  .small {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .big {
+    display: inline-block
+  }
+  .small {
+    display: none;
+  }
+}
+
 body {
-  font-family: "Open Sans", "arial", sans-serif;
-  background-color: #eee;
+  font-family: "PT Sans", "arial", sans-serif;
+  background-color: #fafafa;
   font-size: 1em;
+  line-height: 1em;
   color: #404040;
   margin: auto;
   max-width: 960px;
@@ -11,9 +30,9 @@ body {
 /* HEAD */
 
 h1 {
-  font-size: 1em;
+  font-size: 1.5em;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -25,12 +44,12 @@ h1 {
   padding: 0px 20px;
 }
 
-
 /* BODY */
 
 .old {
   text-align: center;
   font-size: 1.5em;
+  margin:10px 0px 10px 0px;
 }
 
 .projects {
@@ -40,8 +59,19 @@ h1 {
   justify-content: space-around;
 }
 
-ul li .cert {
-  text-decoration: underline;
+.certificate {
+  padding-top: 15px;
+  font-size: 1.1em;
+}
+
+.cert {
+  color: #fafafa;
+  border: 1px solid #64b664;
+  border-radius: 5px;
+  background-color: #64b664;
+  padding: 5px 5px;
+  margin: 0px;
+  text-align: center;
 }
 
 ul {
@@ -81,10 +111,16 @@ a, a:visited {
   color: #375EAB;
 }
 
-a:hover {
-  color: lightblue;
+li a:hover {
+  background-color: #375EAB;  
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 0px 5px;
 }
 
+.jolav {
+  font-family: "arial",sans-serif;
+}
 
 /* HR */
 
