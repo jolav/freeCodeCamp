@@ -10,7 +10,7 @@
 | [Tribute Page](https://freecodecamp.codetabs.com/old/front-end/tribute/tribute.html) | [Random Quote Machine](https://freecodecamp.codetabs.com/old/front-end/quote/quote.html) | ~~Javascript Calculator~~ |
 | [Portfolio](https://freecodecamp.codetabs.com/old/front-end/portfolio/portfolio.html) | [Local Weather](https://freecodecamp.codetabs.com/old/front-end/weather/weather.html) | ~~Pomodoro Clock~~ |
 | [Basic algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) | [Wikipedia Viewer](https://freecodecamp.codetabs.com/old/front-end/wiki/wiki.html) | ~~Tic Tac Toe Game~~ |
-| | ~~Twitch tv API~~ | ~~Simon Game~~ |
+| | [Twitch tv API](https://freecodecamp.codetabs.com/old/front-end/twitch/twitch.html) | ~~Simon Game~~ |
 | | [Intermediate Algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |
 
 * **DATA VISUALIZATION**

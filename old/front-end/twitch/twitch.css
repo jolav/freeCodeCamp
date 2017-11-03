@@ -1,0 +1,113 @@
+body {
+  font-family: "arial", sans-serif;
+  background-color: #caddac;
+  color: #404040;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.box {
+  text-align: center;
+}
+
+.tvPlugin{
+  margin-top: 2%;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.headLogo img {
+  max-height: 48px;
+  padding-right: 10px;
+}
+
+.controls{
+}
+
+.action{
+  border: 1px solid #6742A0;
+  padding: 5px 7px;
+  border-radius: 6px;
+  background-color: #6742A0;
+  color: #fafafa;
+}
+
+.action:hover {
+  background-color: #a68bcf ;
+  border: 1px solid #a68bcf;
+  cursor: pointer;
+}
+
+.list{}
+
+/* CHANNELS */
+
+.channel {
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-family: "PT Sans","Arial", sans-serif;
+  font-size: 1em;
+  margin: 5px auto 0px auto;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+
+img.logo {
+  height: 40px;
+  padding: 5px;
+}
+
+.channel span.name {
+  color: #375EAB;
+  padding: 0px 10px;
+}
+
+.channel span.name a {
+  text-decoration: none;
+}
+
+
+/* GENERIC */
+
+.bold {
+  font-weight: bold;
+}
+
+.imgV {
+  vertical-align: middle;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
