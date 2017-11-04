@@ -17,7 +17,7 @@
 
 | REACT | DATA |
 | :---: | :---: | 
-| ~~Markdown Previewer~~ | ~~Bar chart~~ |
+| ~~Markdown Previewer~~ | [Bar chart](https://freecodecamp.codetabs.com/old/data/bar-chart/bar.html) |
 | ~~Camper Leaderboard~~ | ~~Scatterplot Graph~~ |
 | ~~Recipe Box~~ | ~~Heat Map~~ |
 | ~~Game of Life~~ | ~~National Contiguity with Force Directed Graph~~ |
@@ -32,6 +32,5 @@
 | ~~URL Shortener~~ | ~~Chart Stock Market~~ |
 | ~~Image Search Abstraction Layer~~ | ~~Manage Book Trading Club~~ |
 | ~~File Metadata~~ | ~~Pinterest Clone~~ |
-
 
 
