@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Heat Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FreeCodeCamp: Data Visualization Certification Data Visualization Projects: Visualize Data with Heat Map"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/heat32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./heat.css">
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="title">
+        <h2>Monthly Global Land-Surface Temperature 1753 - 2015</h2>
+        <div>
+          <small>Temperatures are in Celsius and reported as anomalies relative to the Jan 1951-Dec 1980 average.
+            <br> Estimated Jan 1951-Dec 1980 absolute temperature &#8451;: 8.66 +/- 0.07
+          </small>
+        </div>
+      </div>
+      <div class="chart">
+        <svg class="heatMap"></svg>
+      </div>
+
+      <div id="tooltip" class="hidden">
+        <strong>
+          <span id="date">date</span>
+        </strong>
+        <br>
+        <span id="temp">temp</span>
+        <br>
+        <span id="variation">variation</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="heat.js"></script>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>
