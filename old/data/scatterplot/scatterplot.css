@@ -1,0 +1,74 @@
+body {
+  font-family: "PT Sans","arial", sans-serif;
+  background-color: #f3fab6;
+  color: #404040;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.container {
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 5px -5px #777777, 0 8px 5px #a9a9a9;
+  margin: 1%;
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.chart {
+  position: relative;
+  margin: auto;
+  /*height: 80vh;*/
+  width: 90vw;
+}
+
+.notes {
+  line-height: 1em;
+  padding: 10px 10%;
+}
+
+/* GENERIC */
+
+.bold {
+  font-weight: bold;
+}
+
+.imgV {
+  vertical-align: middle;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+a:hover {
+  color:lightblue;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}

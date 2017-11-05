@@ -18,7 +18,7 @@
 | REACT | DATA |
 | :---: | :---: | 
 | ~~Markdown Previewer~~ | [Bar chart](https://freecodecamp.codetabs.com/old/data/bar-chart/bar.html) |
-| ~~Camper Leaderboard~~ | ~~Scatterplot Graph~~ |
+| ~~Camper Leaderboard~~ | [Scatterplot Graph](https://freecodecamp.codetabs.com/old/data/scatterplot/scatterplot.html) |
 | ~~Recipe Box~~ | ~~Heat Map~~ |
 | ~~Game of Life~~ | ~~National Contiguity with Force Directed Graph~~ |
 | ~~Roguelike Dungeon Game~~ | ~~Map Data Across the Globe~~ |
