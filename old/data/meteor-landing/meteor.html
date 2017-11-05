@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Meteorite Landings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FreeCodeCamp: Data Visualization Certification Data Visualization Projects: Map Data Across The Globe"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/meteor64.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="meteor.css">
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="title">
+        Meteorite Landings
+      </div>
+      <div class="chart">
+        <svg class="meteoriteMap"></svg>
+      </div>
+      <div id="tooltip" class="hidden">
+        <strong>
+          <span id="value1">value</span>
+        </strong>
+        <br>
+        <span id="value2">value</span>
+        <br>
+        <span id="value3">value</span>
+      </div>
+      <div class="notes">
+        Drag the map and zoom (x.5 - x5)
+        <br> Data Source:
+        <a href="https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json">Meteorite Strike Data</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="meteor.js"></script>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>

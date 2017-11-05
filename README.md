@@ -20,8 +20,8 @@
 | ~~Markdown Previewer~~ | [Bar chart](https://freecodecamp.codetabs.com/old/data/bar-chart/bar.html) |
 | ~~Camper Leaderboard~~ | [Scatterplot Graph](https://freecodecamp.codetabs.com/old/data/scatterplot/scatterplot.html) |
 | ~~Recipe Box~~ | [Heat Map](https://freecodecamp.codetabs.com/old/data/heat-map/heat.html) |
-| ~~Game of Life~~ | ~~National Contiguity with Force Directed Graph~~ |
-| ~~Roguelike Dungeon Game~~ | ~~Map Data Across the Globe~~ |
+| ~~Game of Life~~ | [National Contiguity with Force Directed Graph](https://freecodecamp.codetabs.com/old/data/country-borders/flags.html) |
+| ~~Roguelike Dungeon Game~~ | [Map Data Across the Globe](https://freecodecamp.codetabs.com/old/data/meteor-landing/meteor.html) |
 
 * **BACKEND**
 

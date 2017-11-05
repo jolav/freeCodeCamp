@@ -1,0 +1,114 @@
+body {
+  font-family: 'PT Sans','arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  max-width: 960px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  color: #404040;
+}
+
+.container {
+  border: 1px solid #cecece;
+  box-shadow: 0px 8px 5px -5px #777777, 0 8px 5px #a9a9a9;
+  margin: 10px 0px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart {
+  border: 1px solid #cecece;
+  font-size: 0.8em;
+}
+
+.notes {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+path {
+  stroke: #323232;
+  stroke-width: 0.3px;
+  fill: #cccc99;
+}
+
+.landing {
+  fill: #ff0000;
+  opacity: 0.4;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  margin: 10px 0px 30px 30px;
+  text-align: center;
+}
+
+#tooltip p {
+  font-family: 'arial', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+/* GENERIC */
+
+.bold {
+  font-weight: bold;
+}
+
+.imgV {
+  vertical-align: middle;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+a:hover {
+  color:lightblue;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
