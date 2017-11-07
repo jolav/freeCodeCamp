@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Pomodoro Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FreeCodeCamp: Front End Development Certification - Advanced Front End Development Projects: Build a Pomodoro Clock"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/clock48.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./pomodoro.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="times">
+      <div class="break">
+        <div class="breakTitle">
+          <span>Break</span>
+        </div>
+        <div class="breakConfig">
+          <span class="action" id="1">&#x2212;</span>
+          <span class="number" id="breakMins">05</span>
+          <span class="action" id="2">+</span>
+        </div>
+      </div>
+      <div class="session">
+        <div class="sessionTitle">
+          <span>Session</span>
+        </div>
+        <div class="sessionConfig">
+          <span class="action" id="3">&#x2212;</span>
+          <span class="number" id="sessionMins">25</span>
+          <span class="action" id="4">+</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="clock">
+      <span id="clock">25:00</span>
+    </div>
+
+    <div class="controls">
+      <div class="playPause">
+        <img class="play action" id="5" alt="play" src="/_assets/icons/play48.png">
+        <img class="pause action" id="6" alt="pause" src="/_assets/icons/pause48.png">
+      </div>
+      <div class="reload">
+        <img class="action" id="7" salt="reload" src="/_assets/icons/reload48.png">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="pomodoro.js"></script>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>
