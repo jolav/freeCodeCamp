@@ -1,0 +1,156 @@
+body {
+  font-family: "arial", sans-serif;
+  background-color: #caddac;
+    font-size: 1em;
+  color: #404040;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.container {
+}
+
+#menu{}
+
+#board{
+  display: none;
+}
+
+#result{
+  display: none;
+}
+
+/* SELECT */
+
+.title {
+  text-align: center;
+  width: 300px;
+}
+
+.select {
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #caddac;
+  color: #404040;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.choose {
+  padding-top: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.player {
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+#X {
+background-color: #87deb8;
+}
+
+#O {
+background-color: #b887de
+}
+
+.player:hover {
+  color: #428bca;
+  cursor: pointer;
+}
+
+/* BOARD */
+
+.board {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #caddac;
+  max-width: 300px;
+  margin: 5% auto 2% auto;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box  {
+  font-size: 2.5em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}  
+
+.action {
+  border: 2px solid #404040;
+  border-radius: 5px;
+  flex-basis: 60px;
+  height: 60px; 
+  margin: 15px 10px 10px 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.action:hover {
+  background-color: lightblue;
+}
+
+/* RESULT */
+
+.result {
+  text-align: center;
+  margin: 0px auto;
+  width: 300px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  color: #404040;
+}
+
+.aftermath {
+  font-size: 3em;
+}
+
+.continue {
+  margin-top: 2%;
+}
+
+.continue span{
+  padding: 7px 10px;
+  background-color: #375EAB;
+  border-radius: 5px;
+  cursor: pointer;
+  color : #fff;
+}
+
+.continue span:hover {
+  color:lightblue;
+}
+
+/* GENERIC */
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
