@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Simon Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FreeCodeCamp: Front End Development Certification - Advanced Front End Development Projects: Build a Simon Game"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/simon48.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./simon.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="control">
+      <div class="name">
+        SIMON
+        <span class="reg">&reg;</span>
+      </div>
+      <div class="controls">
+        <button class="btn btnPlus" id="start">START</button>
+        <button class="btn" id="restart">RESTART</button>
+        <button class="btn btnPlus" id="strict">STRICT</button>
+      </div>
+    </div>
+
+    <div class="board">
+      <div id="green" class="action cell"></div>
+      <div id="red" class="action cell"></div>
+      <div id="yellow" class="action cell"></div>
+      <div id="blue" class="action cell"></div>
+    </div>
+
+    <div class="score">
+      <div id="score" class="serie">
+        <h4>SERIE :&nbsp;
+          <span class="digit" id="counter">
+            <strong>0</strong>
+          </span> &nbsp;OF&nbsp;
+          <span class="digit" id="round">
+            <strong>0</strong>
+          </span>
+        </h4>
+      </div>
+      <div id="next" class="ok" hidden>
+        <h4>
+          <strong>Well Done! Prepare for next Round</strong>
+        </h4>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="simon.js"></script>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>
