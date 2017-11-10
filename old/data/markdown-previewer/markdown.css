@@ -1,0 +1,93 @@
+body {
+  font-family: "PT Sans","arial", sans-serif;
+  background-color: #caddac;
+  font-size: 0.90em;
+  margin: 0px auto;
+  color: #404040;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.titleText {
+  background-color: #888;
+  padding: 5px 20%;
+  border-radius: 5px;
+  color: #fff
+}
+
+.title {
+  position: fixed;
+}
+
+.editor .title {
+  left: 15%;
+}
+
+.previewer .title {
+  left: 65%;
+}
+
+.editor {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top:15px;
+  padding-left: 5px;
+  width: 40%;
+  flex :0 0 40%
+}
+
+.input {
+  width: 40%;
+}
+
+#input {
+  position: fixed;  
+  margin-top: 30px;
+  height: calc(100vh - 70px);
+  width: 38%;
+  resize: none;
+}
+
+.previewer {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 58%;
+  margin-top:15px;
+}
+
+.output {
+  padding-top:30px;
+}
+
+/* GENERIC */
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+  font-size: 1.1em !important;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
