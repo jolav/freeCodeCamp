@@ -1,0 +1,266 @@
+@media only screen and (max-width: 540px) {
+  .headTitle {
+    margin : 2% 10%;
+  }
+  .recipes {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 541px) {
+  .headTitle {
+    margin : 2% 10%;
+  }
+  .recipes {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .headTitle {
+    margin : 2% 20%;
+  }
+  .recipes {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  .headTitle {
+    margin : 2% 20%;
+  }
+  .recipes {
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+}
+
+body {
+  font-family: "PT Sans","arial", sans-serif;
+  background-color: #caddac;
+  background-color: #fafafa;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0px auto;
+  color: #404040;
+  max-width: 960px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+/* HEAD */
+
+.headTitle {
+  background-color: #caddac;
+  border: 3px solid green;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.add {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+/* RECIPES */
+
+.recipes {
+  max-width: 960px;
+  margin: 0px auto;
+  text-align: center;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
+}
+
+
+.recipe {
+  display: inline-block;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  max-width: 240px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.recipeImage {
+  max-width: 100%;
+}
+
+.actions, .title{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.action {
+  max-height: 24px;
+}
+
+.action:hover {
+  transform: scale(1.4);
+  background-color: #caddac;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+ /* GENERIC */
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+  font-size: 1.1em !important;
+}
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
+
+/* The Modal (background)
+http://www.w3schools.com/howto/howto_css_modals.asp
+*/
+
+.modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(186, 220, 139, 0.7);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ddd;
+  background-color: #d0eee6;
+  margin: 10% auto;
+  padding: 0px;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatetop;
+  animation-duration: 0.5s
+}
+
+.modal-header {
+  margin: 0px;
+  padding: 20px;
+  background-color: mediumseagreen;
+  background-color: #6ebeca;
+  color: #fafafa;
+}
+
+.modal-body {
+  padding: 5px 10px;
+}
+
+.entrie {
+  padding: 5px;
+}
+
+input.for-control {
+  width: 90%;
+  padding: 5px;
+}
+
+.modal-footer {
+display: flex;
+justify-content: space-between;
+  padding: 10px;
+  background-color: mediumseagreen;
+  background-color: #6ebeca;
+  color: #fafafa;
+}
+
+.close {
+  /*color: #dcdcdc;*/
+  float: right;
+  padding: 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete:hover{
+  cursor: pointer;
+  color:red;
+}
+
+#saveAndClose {
+  cursor: pointer;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 15%;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 15%;
+    opacity: 1
+  }
+}
