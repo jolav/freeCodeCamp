@@ -13,11 +13,10 @@ class Recipes extends React.Component {
     let initialData = [];
     if (localStorage.recipes === undefined) {
       initialData = JSON.parse(JSON.stringify(this.props.defaultRecipes));
+    } else if (JSON.parse(localStorage.recipes).length === 0) {
+      initialData = JSON.parse(JSON.stringify(this.props.defaultRecipes));
     } else {
       initialData = JSON.parse(localStorage.recipes);
-    }
-    if (JSON.parse(localStorage.recipes).length === 0) {
-      initialData = JSON.parse(JSON.stringify(this.props.defaultRecipes));
     }
     this.state = {
       recipesList: initialData// props.defaultRecipes,

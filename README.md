@@ -20,7 +20,7 @@
 | [Markdown Previewer](https://freecodecamp.codetabs.com/old/data/markdown-previewer/markdown.html) | [Bar chart](https://freecodecamp.codetabs.com/old/data/bar-chart/bar.html) |
 | [Camper Leaderboard](https://freecodecamp.codetabs.com/old/data/camper-leaderboard/camper.html) | [Scatterplot Graph](https://freecodecamp.codetabs.com/old/data/scatterplot/scatterplot.html) |
 | [Recipe Box](https://freecodecamp.codetabs.com/old/data/recipe-box/recipe.html) | [Heat Map](https://freecodecamp.codetabs.com/old/data/heat-map/heat.html) |
-| ~~Game of Life~~ | [National Contiguity with Force Directed Graph](https://freecodecamp.codetabs.com/old/data/country-borders/flags.html) |
+| [Game of Life](https://freecodecamp.codetabs.com/old/data/game-of-life/life.html) | [National Contiguity with Force Directed Graph](https://freecodecamp.codetabs.com/old/data/country-borders/flags.html) |
 | ~~Roguelike Dungeon Game~~ | [Map Data Across the Globe](https://freecodecamp.codetabs.com/old/data/meteor-landing/meteor.html) |
 
 * **BACKEND**
