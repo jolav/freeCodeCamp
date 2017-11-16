@@ -6,11 +6,11 @@ class Game extends React.Component {
     this.state = {
       ct: {
         control: 1,
-        speed: 1,
-        size: 1,
+        speed: 2,
+        size: 2,
         show: "Pause",
-        cols: 20,
-        rows: 20,
+        cols: 50,
+        rows: 40,
         running: true,
       },
       out: {
@@ -18,12 +18,15 @@ class Game extends React.Component {
         lives: 0
       },
       grid: [],
+
       onoff: undefined,
     };
     this.clickControl = this.clickControl.bind(this);
     this.run = this.run.bind(this);
     this.clickCell = this.clickCell.bind(this);
+    this.updateGeneration = this.updateGeneration.bind(this);
   }
+
   clear(type) {
     let h = window.getNewGrid(type, this.state.ct.cols, this.state.ct.rows);
     this.state.grid = h[0];
@@ -36,7 +39,7 @@ class Game extends React.Component {
   }
   componentWillMount() {
     let h = window.getNewGrid("random", this.state.ct.cols, this.state.ct.rows);
-    this.state.grid = h[0];
+    this.state.grid = h[0];//kk
     this.state.out.lives = h[1];
     this.state.out.gen = 0;
     this.setState = ({
@@ -61,26 +64,28 @@ class Game extends React.Component {
   }
   updateGeneration() {
     let g = this.state.grid;
-    let g2 = this.state.grid;
+    let g2 = window.initArray(this.state.ct.cols, this.state.ct.rows, 0);
     let lives = this.state.out.lives;
     for (let x = 0; x < this.state.ct.cols; x++) {
       for (let y = 0; y < this.state.ct.rows; y++) {
         let neighbors = this.getNeighbors(g, x, y);
+        //console.log(`Position => ${x}:${y} has => ${neighbors} neighbors`);
         if (g[x][y] === 0 && neighbors === 3) {
           g2[x][y] = 1;
           lives++;
         } else if (g[x][y] === 1) {
-          if (neighbors < 2) {
+          if (neighbors < 2 || neighbors > 3) {
             g2[x][y] = 0;
             lives--;
-          } else if (neighbors > 3) {
-            g2[x][y] = 0;
-            lives--;
+          } else {
+            g2[x][y] = 1;
           }
+        } else {
+          g2[x][y] = 0;
         }
       }
     }
-    this.state.grid = g;
+    this.state.grid = g2;
     this.state.out.gen++;
     this.state.out.lives = lives;
     this.setState = ({
@@ -90,69 +95,15 @@ class Game extends React.Component {
     this.forceUpdate();
   }
   getNeighbors(g, x, y) {
-    let cols = this.state.ct.cols;
-    let rows = this.state.ct.rows;
+    let cols = this.state.ct.cols - 1;
+    let rows = this.state.ct.rows - 1;
     let neighbors = 0;
     let i, j;
-    if (x > 0 && x < cols - 1 && y > 0 && y < rows - 1) { // INSIDE
-      for (i = x - 1; i < x + 2; i++) {
-        for (j = y - 1; j < y + 2; j++) {
-          posibleNeighbor();
+    for (i = Math.max(0, x - 1); i <= Math.min(x + 1, cols); i++) {
+      for (j = Math.max(0, y - 1); j <= Math.min(y + 1, rows); j++) {
+        if (i !== x || j !== y) {
+          if (g[i][j] === 1) neighbors++;
         }
-      }
-    } else if (x === 0 && y > 0 && y < rows - 1) { // WEST NO CORNERS
-      for (i = x; i < x + 2; i++) {
-        for (j = y - 1; j < y + 2; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (x === cols - 1 && y > 0 && y < rows - 1) { // EAST NO CORNERS
-      for (i = x - 1; i < x + 1; i++) {
-        for (j = y - 1; j < y + 2; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (y === 0 && x > 0 && x < cols - 1) { // NORTH NO CORNERS
-      for (i = x - 1; i < x + 2; i++) {
-        for (j = y; j < y + 2; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (y === rows - 1 && x > 0 && x < cols - 1) { // SOUTH NO CORNERS
-      for (i = x - 1; i < x + 2; i++) {
-        for (j = y - 1; j < y + 1; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (x === 0 && y === 0) { // NW CORNER
-      for (i = x; i < x + 2; i++) {
-        for (j = y; j < y + 2; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (x === cols - 1 && y === 0) { // NE CORNER
-      for (i = x - 1; i < x + 1; i++) {
-        for (j = y; j < y + 2; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (x === cols - 1 && y === rows - 1) { // SE CORNER
-      for (i = x - 1; i < x + 1; i++) {
-        for (j = y - 1; j < y + 1; j++) {
-          posibleNeighbor();
-        }
-      }
-    } else if (x === 0 && y === rows - 1) { // SW CORNER
-      for (i = x; i < x + 2; i++) {
-        for (j = y - 1; j < y + 1; j++) {
-          posibleNeighbor();
-        }
-      }
-    }
-
-    function posibleNeighbor() {
-      if (i !== x || j !== y) {
-        if (g[i][j] === 1) neighbors++;
       }
     }
     return neighbors;
