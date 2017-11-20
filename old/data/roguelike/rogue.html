@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Roguelike Dungeon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FreeCodeCamp: Data Visualization Certification React Projects: Build a Roguelike Dungeon Crawler Game"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/rogue32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./rogue.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="body">
+
+      <div class="infoPanel">
+        <div class="box">
+          <span class="tag">HP</span>
+          <button id="health" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">LEVEL</span>
+          <button id="level" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">XP</span>
+          <button id="xp" class="btn">0</button>
+        </div>
+        <div class="box">
+          <span class="tag">WEAPON</span>
+          <button id="weapon" class="btn">0</button>
+        </div>
+      </div>
+
+      <div class="canvas">
+        <canvas tabindex="1" id="myCanvas"></canvas>
+      </div>
+
+      <div class="logArea">
+        <textarea id="logArea" placeholder="Log Area"></textarea>
+      </div>
+
+    </div>
+
+  </div>
+  <script defer src="map.js"></script>
+  <script defer src="rogue.js"></script>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>
