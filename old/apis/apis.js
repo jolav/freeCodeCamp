@@ -6,21 +6,20 @@ const lib = require('./lib.js');
 const filePath = ('./config.json');
 
 const time = require('./time/time.js');
-// const header = require('./header/header.js')
+const parser = require('./parser/parser.js');
 // const url = require('./url/url.js')
 // const image = require('./image/image.js')
 // const file = require('./file/file.js')
 
-global.ct = {}; // .spData ; 
+global.ct = {};
 
 const port = process.env.PORT || 3000;
-// const port = process.env.PORT || 3503
 
 app.disable('x-powered-by');
 
 // routes
 app.use('/time', time);
-// app.use('/header', header)
+app.use('/parser', parser);
 // app.use('/url', url)
 // app.use('/image', image)
 // app.use('/file', file)

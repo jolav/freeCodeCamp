@@ -13,7 +13,15 @@ function loadJSONfile (filePath, flag, callback) {
 function areAllCharsNumbers (str) {
   return str.match(/^\d+$/);
 }
+
+function getIP (req) {
+  return (req.headers['x-forwarded-for'] ||
+  req.connection.remoteAddress || req.socket.remoteAddress ||
+  req.connection.socket.remoteAddress).split(',')[0];
+}
+
 module.exports = {
   loadJSONfile: loadJSONfile,
-  areAllCharsNumbers: areAllCharsNumbers
+  areAllCharsNumbers: areAllCharsNumbers,
+  getIP: getIP
 };
