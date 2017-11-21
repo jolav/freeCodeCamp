@@ -27,7 +27,7 @@
 
 | APIs | WEB APPS |
 | :---: | :---: | 
-| ~~Timestamp~~ | ~~Voting App~~ |
+| [Timestamp](https://freecodecamp.codetabs.com/old/apis/time/time.html) | ~~Voting App~~ |
 | ~~Request Header Parser~~ | ~~Nightlife Coordination App~~ |
 | ~~URL Shortener~~ | ~~Chart Stock Market~~ |
 | ~~Image Search Abstraction Layer~~ | ~~Manage Book Trading Club~~ |
