@@ -3,7 +3,7 @@ const app = express();
 const multer = require('multer');
 
 const upload = multer({
-  dest: 'uploads/',
+  // dest: 'uploads/', // dont want to store files on server
   limits: { fileSize: 20971520 } // 20mb
 }).single('inputFile');
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>URL Shortener API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Back End Development Certification Api Projects: URL Shortener Microservice"
+  />
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/api32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./../_assets/apis.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>URL Shortener API Docs</h1>
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        You submit a
+        <strong>valid hostname</strong> as a parameter and receive a shortened URL in JSON response.
+        <br> API endpoint is
+        <code>GET https://apis-v1-jolav.glitch.me/url/validHostname</code>
+      </li>
+      <li>
+        If you pass an invalid hostname that doesn't follow the valid
+        <code>www.domain.extension or example.extension</code> format, the JSON response will contain an error instead.
+      </li>
+      <li>
+        If you visit a shortened URL you will be redirected to the original link.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show all shortened URLs
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v1-jolav.glitch.me/url/list">
+            https://apis-v1-jolav.glitch.me/url/list</a>
+        </code>
+      </li>
+      <li>Create a new shortened URL
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v1-jolav.glitch.me/url/new/codetabs.com">
+            https://apis-v1-jolav.glitch.me/url/new/codetabs.com</a>
+        </code>
+      </li>
+      <li>Use a shortened URL
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v1-jolav.glitch.me/url/71">
+            https://apis-v1-jolav.glitch.me/url/71</a>
+        </code>
+      </li>
+    </ul>
+
+    <h3>Example Output:</h3>
+    <pre>
+    {
+      "short": 69 ,
+      "original":"codetabs.com",
+    }
+    </pre>
+  </div>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>

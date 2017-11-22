@@ -20,8 +20,23 @@ function getIP (req) {
   req.connection.socket.remoteAddress).split(',')[0];
 }
 
+function isValidHostname (hostname) {
+  let condition = /^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\\-]*[A-Za-z0-9])$/;
+  if (condition.test(hostname)) {
+    return true;
+  }
+  return false;
+}
+
+function sendResult (res, data, status) {
+  res.header('Content-Type', 'application/json');
+  res.status(status).send(JSON.stringify(data, null, 3));
+}
+
 module.exports = {
   loadJSONfile: loadJSONfile,
   areAllCharsNumbers: areAllCharsNumbers,
-  getIP: getIP
+  getIP: getIP,
+  isValidHostname: isValidHostname,
+  sendResult: sendResult
 };
