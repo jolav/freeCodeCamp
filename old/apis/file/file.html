@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>File Metadata API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Back End Development Certification Api Projects: File Metadata Microservice"
+  />
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/api32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./../_assets/apis.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>File Metadata API Docs</h1>
+    <h3>User Stories:</h3>
+    <ol>
+      <li>You submit a Form that includes a file upload.</li>
+      <li>You get a JSON response with the uploaded file size in bytes.</li>
+      <li>Server accepts files with
+        <strong>max size 20 Mbs</strong>
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <p>
+      Please Upload a File ...
+    </p>
+    <div class="fileForm">
+      <form method="post" action="https://apis-v1-jolav.glitch.me/file/upload" enctype="multipart/form-data">
+        <div>
+          <input type="file" class="input" name="inputFile">
+        </div>
+        <div>
+          <button type="submit" class="but">Upload File</button>
+        </div>
+      </form>
+    </div>
+
+    <h3>Example Output:</h3>
+    <pre>
+      { 
+        "filename": "X",
+        "size": "X" 
+      }
+    </pre>
+  </div>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <br>
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>

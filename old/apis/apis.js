@@ -9,7 +9,7 @@ const time = require('./time/time.js');
 const parser = require('./parser/parser.js');
 // const url = require('./url/url.js')
 // const image = require('./image/image.js')
-// const file = require('./file/file.js')
+const file = require('./file/file.js');
 
 global.ct = {};
 
@@ -22,7 +22,7 @@ app.use('/time', time);
 app.use('/parser', parser);
 // app.use('/url', url)
 // app.use('/image', image)
-// app.use('/file', file)
+app.use('/file', file);
 
 app.get('*', (req, res) => {
   // res.redirect('https://freecodecamp.codetabs.com')
