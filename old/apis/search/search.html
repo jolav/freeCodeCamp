@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Image Search API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Back End Development Certification Api Projects: Image Search Abstraction Layer"
+  />
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets/icons/api32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./../_assets/apis.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Image Search API Docs</h1>
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        You can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+        <br> API endpoint is
+        <br>
+        <code>GET /search/search?q=searchThis[&num=number][&offset=number]</code>
+      </li>
+      <li>
+        You can add a ?offset=(1-100) which result the search should start at.
+        <br> You can choose how many responses you get adding parameter ?num=(1-10)
+        <br>
+        <code>
+          https://apis-v1-jolav.glitch.me/search/search?q=cats&num=10&offset=5
+        </code>
+      </li>
+      <li>
+        You can get a list of the most recently submitted search strings.
+        <br>
+        <code>
+        https://apis-v1-jolav.glitch.me/search/recent</code>
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show recent searches
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v1-jolav.glitch.me/search/recent">
+            https://apis-v1-jolav.glitch.me/search/recent</a>
+        </code>
+      </li>
+      <li>Show the first X results of the search
+        <br>
+        <code>GET 
+          <a class="link" 
+          href="https://apis-v1-jolav.glitch.me/search/search?q=cats&num=10">
+          https://apis-v1-jolav.glitch.me/search/search?q=cats&num=10</a>
+        </code>
+      </li>
+    </ul>
+
+    <h3>Example Output:</h3>
+    Search
+    <pre>
+    {
+      "title":"Cats",
+      "id":"B37zkUD4sVcJ",
+      "snippet":"Further details: The logo for the musical cats.",
+      "displayLink":"en.wikipedia.org",
+      "thumb_src":"https://encryptedgstatic.com/images?q=tbn:",
+      "image_src":"https://upload.wikimedia./CatsMusicalLogo.jpg"
+    }
+    </pre> Recent
+    <pre>
+    {
+      "idimage": 95,
+      "search": "cats",
+      "when": "Wed, 22 Nov 2017 17:31:15 GMT"
+    },
+    </pre>
+  </div>
+
+  <!--google - analytics-- >
+  <!--#include file= "/_assets/templates/stats.html" -->
+
+  <hr>
+
+  <!--Jolav Footer-- >
+  <!--#include file= "/_assets/templates/jolav.html" -->
+
+</body>
+
+</html>

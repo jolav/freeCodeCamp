@@ -29,8 +29,8 @@
 | :---: | :---: | 
 | [Timestamp](https://freecodecamp.codetabs.com/old/apis/time/time.html) | ~~Voting App~~ |
 | [Request Header Parser](https://freecodecamp.codetabs.com/old/apis/parser/parser.html) | ~~Nightlife Coordination App~~ |
-| ~~URL Shortener~~ | ~~Chart Stock Market~~ |
-| ~~Image Search Abstraction Layer~~ | ~~Manage Book Trading Club~~ |
+| [URL Shortener](https://freecodecamp.codetabs.com/old/apis/url/url.html) | ~~Chart Stock Market~~ |
+| [Image Search Abstraction Layer](https://freecodecamp.codetabs.com/old/apis/search/search.html) | ~~Manage Book Trading Club~~ |
 | [File Metadata](https://freecodecamp.codetabs.com/old/apis/file/file.html) | ~~Pinterest Clone~~ |
 
 

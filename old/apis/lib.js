@@ -1,4 +1,5 @@
 const fs = require('fs');
+const https = require('https');
 
 function loadJSONfile (filePath, flag, callback) {
   fs.readFile(filePath, 'utf8', (err, data) => {
@@ -33,10 +34,33 @@ function sendResult (res, data, status) {
   res.status(status).send(JSON.stringify(data, null, 3));
 }
 
+function makeHttpsRequest (path, callback) {
+  https.get(path, (res) => {
+    res.setEncoding('utf8');
+    var body = '';
+    res.on('data', (d) => {
+      body += d;
+    });
+    res.on('end', () => {
+      try {
+        var parsed = JSON.parse(body);
+      } catch (err) {
+        console.error('Unable to parse response as JSON', err);
+        return callback(err);
+      }
+      callback(null, parsed);
+    });
+  }).on('error', (err) => {
+    console.error('Error with the request:', err.message);
+    callback(err);
+  });
+}
+
 module.exports = {
   loadJSONfile: loadJSONfile,
   areAllCharsNumbers: areAllCharsNumbers,
   getIP: getIP,
   isValidHostname: isValidHostname,
-  sendResult: sendResult
+  sendResult: sendResult,
+  makeHttpsRequest: makeHttpsRequest
 };

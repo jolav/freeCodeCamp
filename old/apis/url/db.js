@@ -2,7 +2,7 @@ const mongo = require('mongodb');
 const securityDocsLimit = 1000;
 
 function getAllUrls (cb) {
-  mongo.connect(global.ct.config.dburl, function (err, db) {
+  mongo.connect(global.ct.config.connection, function (err, db) {
     if (err) throw err;
     // console.log('Connected correctly to server')
     const collection = db.collection('url-shortener');
@@ -17,13 +17,14 @@ function getAllUrls (cb) {
         result.push(aux);
         aux = {};
       });
+      db.close();
       cb(result);
     });
   });
 }
 
 function saveNewUrl (q, cb) {
-  mongo.connect(global.ct.config.dburl, function (err, db) {
+  mongo.connect(global.ct.config.connection, function (err, db) {
     if (err) throw err;
     // console.log('Connected correctly to server')
     const collection = db.collection('url-shortener');
@@ -34,6 +35,7 @@ function saveNewUrl (q, cb) {
       };
       collection.insert(input, function (err, result) {
         if (err) throw err;
+        db.close();
         cb(result);
       });
     });
@@ -41,7 +43,7 @@ function saveNewUrl (q, cb) {
 }
 
 function getNextIndex (cb) {
-  mongo.connect(global.ct.config.dburl, function (err, db) {
+  mongo.connect(global.ct.config.connection, function (err, db) {
     if (err) throw err;
     // console.log('Connected correctly to server')
     const collection = db.collection('url-shortener');
@@ -62,6 +64,7 @@ function getNextIndex (cb) {
         }
         cont++;
       }
+      db.close();
       cb(index);
     });
   });
