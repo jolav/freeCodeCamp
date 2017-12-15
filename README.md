@@ -28,7 +28,7 @@
 | APIs | WEB APPS |
 | :---: | :---: | 
 | [Timestamp](https://freecodecamp.codetabs.com/old/apis/time/time.html) | ~~Voting App~~ |
-| [Request Header Parser](https://freecodecamp.codetabs.com/old/apis/parser/parser.html) | ~~Nightlife Coordination App~~ |
+| [Request Header Parser](https://freecodecamp.codetabs.com/old/apis/parser/parser.html) | [Nightlife Coordination App](https://freecodecamp.codetabs.com/old/apps/nightlife/night.html) |
 | [URL Shortener](https://freecodecamp.codetabs.com/old/apis/url/url.html) | [Chart Stock Market](https://freecodecamp.codetabs.com/old/apps/stock/stock.html) |
 | [Image Search Abstraction Layer](https://freecodecamp.codetabs.com/old/apis/search/search.html) | ~~Manage Book Trading Club~~ |
 | [File Metadata](https://freecodecamp.codetabs.com/old/apis/file/file.html) | ~~Pinterest Clone~~ |
