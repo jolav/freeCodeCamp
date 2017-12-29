@@ -1,0 +1,25 @@
+{
+  "polls": {
+    "_id": "id",
+    "createdBy": "username",
+    "createdAt": "Date.now()",
+    "question": "poll question",
+    "options": [
+      {
+        "text": "option text1",
+        "votes": [
+          "ip1",
+          "ip2"
+        ]
+      },
+      {
+        "text": "option text2",
+        "votes": [
+          "ip10",
+          "ip11",
+          "ip12"
+        ]
+      }
+    ]
+  }
+}

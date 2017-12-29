@@ -1,0 +1,113 @@
+body {
+  font-family: "PT Sans", "arial", sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  /*line-height: 1em;*/
+  color: #404040;
+  margin: 0px auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+/* POLLS */
+
+.polls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+.poll {
+  padding: 10px;
+  margin: 10px;
+  max-width: 250px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  margin: auto;
+  text-align: center;
+}
+
+.myChart {
+  /*margin: auto;*/
+  max-width: 250px;
+  /* border: 2px solid grey;*/
+}
+
+.formGuest {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.selectStyle {
+  vertical-align: middle;
+  margin: 5px 10px;
+  padding: 0px;
+  width: 120px;
+  /*  border: 1px solid #fafafa;
+  border-radius: 3px;*/
+}
+
+.voteBut {
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid #c3c3d5;
+  background-color: #ededed;
+  background-color: lightblue;
+}
+
+.delBut {
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid #c3c3d5;
+  background-color: #ededed;
+  background-color: lightcoral;
+}
+
+/* GENERIC */
+
+a, a:visited {
+  text-decoration: none;
+  color: lightblue;
+}
+
+li a:hover {
+  background-color: #375EAB;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.actionMenu:hover {
+  color: orange;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+/* HR */
+
+hr {
+  margin: 5px 10% 5px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
