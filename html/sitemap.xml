@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://freecodecamp.codetabs.com/</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/tribute/tribute.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/portfolio/portfolio.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/quote/quote.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/weather/weather.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/wiki/wiki.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/twitch/twitch.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/calculator/calculator.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/pomodoro/pomodoro.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/tictactoe/tictactoe.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/front-end/simon/simon.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/markdown-previewer/markdown.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/camper-leaderboard/camper.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/recipe-box/recipe.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/game-of-life/life.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/roguelike/rogue.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/bar-chart/bar.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/scatterplot/scatterplot.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/heat-map/heat.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/country-borders/flags.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/data/meteor-landing/meteor.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apis/time/time.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apis/parser/parser.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apis/url/url.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apis/search/search.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apis/file/file.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apps/voting/voting.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apps/nightlife/night.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apps/stock/stock.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apps/book/book.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://freecodecamp.codetabs.com/old/apps/pinterest/pinterest.html</loc>
+  <lastmod>2018-02-27T20:14:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
