@@ -347,7 +347,7 @@ const m = [
   '/_assets/images/rogue/skeleton.gif',
   '/_assets/images/rogue/chest.png',
   '/_assets/images/rogue/food.png',
-  'https://freecodecamp.codetabs.com/_assets/images/rogue/down.gif',
+  'https://jolav.me/freecodecamp/_assets/images/rogue/down.gif',
   '/_assets/images/rogue/dragon.png'
 ];
 

@@ -1,6 +1,6 @@
 {
   const channels = ['OgamingSC2', 'freecodecamp', 'storbeck', 'terakilobyte', 'habathcx', 'RobotCaleb', 'thomasballinger', 'noobs2ninjas', 'beohoff', 'brunofin', 'comster404', 'test_channel', 'cretetion', 'sheevergaming', 'TR7K', 'ESL_SC2'];
-  const dummy = 'https://freecodecamp.codetabs.com/_assets/images/dumy.jpeg';
+  const dummy = 'https://jolav.me/freecodecamp/_assets/images/dumy.jpeg';
   let html = '';
   let action;
 

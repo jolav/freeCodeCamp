@@ -37,7 +37,7 @@ app.get('/getData', function (req, res) {
 });
 
 app.get('*', (req, res) => {
-  res.redirect('https://freecodecamp.codetabs.com');
+  res.redirect('https://jolav.me/freecodecamp');
 // res.status(404).send('Not Found')
 });
 

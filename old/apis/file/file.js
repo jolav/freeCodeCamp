@@ -24,11 +24,11 @@ app.post('/upload', function (req, res) {
 });
 
 app.post('/*', (req, res) => {
-  res.redirect('https://freecodecamp.codetabs.com');
+  res.redirect('https://jolav.me/freecodecamp');
 });
 
 app.get('/*', (req, res) => {
-  res.redirect('https://freecodecamp.codetabs.com');
+  res.redirect('https://jolav.me/freecodecamp');
 });
 
 module.exports = app;

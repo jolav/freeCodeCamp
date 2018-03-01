@@ -10,7 +10,7 @@ const Switch = window.ReactRouterDOM.Switch;
 const Redirect = window.ReactRouterDOM.Redirect;
 
 const development = "/old/apps/book/html";
-const production = "/old/apps/book";
+const production = "/freecodecamp/old/apps/book";
 
 //const urlAPI = "http://localhost:3000/";
 const urlAPI = "https://book-v1-jolav.glitch.me/";

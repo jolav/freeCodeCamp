@@ -10,9 +10,9 @@ const Switch = window.ReactRouterDOM.Switch;
 const Redirect = window.ReactRouterDOM.Redirect;
 
 const dev = "/old/apps/pinterest/html";
-const prod = "/old/apps/pinterest";
+const prod = "/freecodecamp/old/apps/pinterest";
 const status = prod;
-const defaultImage = "http://freecodecamp.codetabs.com/_assets/images/pinterest/imageNotFound.png";
+const defaultImage = "http://jolav.me/freecodecamp/_assets/images/pinterest/imageNotFound.png";
 
 //const urlAPI = "http://127.0.0.1:3000/";
 const urlAPI = "https://pinterest-v1-jolav.glitch.me/";

@@ -9,11 +9,11 @@ const Switch = window.ReactRouterDOM.Switch;
 const Redirect = window.ReactRouterDOM.Redirect;
 
 const dev = "/old/apps/voting/html";
-const prod = "/old/apps/voting";
-const status = dev;
+const prod = "/freecodecamp/old/apps/voting";
+const status = prod;
 
-const urlAPI = "http://localhost:3000/";
-//const urlAPI = "https://voting-v1-jolav.glitch.me/";
+//const urlAPI = "http://localhost:3000/";
+const urlAPI = "https://voting-v1-jolav.glitch.me/";
 
 class Control extends React.Component {
   constructor(props) {

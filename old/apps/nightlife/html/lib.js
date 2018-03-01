@@ -2,7 +2,7 @@
 'use strict';
 
 const lib = (function () {
-  const urlData = 'https://geoip.tools/v1/json';
+  const urlData = 'https://api.codetabs.com/geoip/json';
 
   function fetchDataFromServer (urlData, callback) {
     const xhr = new XMLHttpRequest();

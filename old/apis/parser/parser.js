@@ -7,7 +7,7 @@ app.get('/whoami', function (req, res) {
 });
 
 app.get('/*', (req, res) => {
-  res.redirect('https://freecodecamp.codetabs.com');
+  res.redirect('https://jolav.me/freecodecamp');
 });
 
 module.exports = app;

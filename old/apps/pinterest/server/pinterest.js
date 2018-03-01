@@ -81,7 +81,7 @@ app.get('/auth/twitter/callback', passport.authenticate('twitter', {            
 
 app.get('/auth/twittersuccess', function (req, res) {
   // console.log('SUCCESS', req.user)
-  res.redirect('https://freecodecamp.codetabs.com/old/apps/pinterest/pinterest.html');
+  res.redirect('https://jolav.me/freecodecamp/old/apps/pinterest/pinterest.html');
 // res.redirect('http://127.0.0.1:8080/old/apps/pinterest/html/pinterest.html')
 });
 
@@ -132,7 +132,7 @@ app.post('/votepic', function (req, res) {
 });
 
 app.get('*', function (req, res) {
-  // res.redirect('https://freecodecamp.codetabs.com')
+  // res.redirect('https://jolav.me/freecodecamp')
   res.status(404).send('Not Found');
 });
 

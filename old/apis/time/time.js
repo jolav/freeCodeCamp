@@ -7,7 +7,7 @@ app.get('/*', function (req, res) {
 });
 
 app.get('/*', (req, res) => {
-  res.redirect('https://codetabs.com/notFound');
+  res.redirect('https://jolav.me/notFound');
 });
 
 module.exports = app;

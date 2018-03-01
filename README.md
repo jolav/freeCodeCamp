@@ -6,7 +6,7 @@
 
 ![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg)  
 
-[DEMO ONLINE](https://freecodecamp.codetabs.com)  
+[DEMO ONLINE](https://jolav.me/freecodecamp)  
 [GITHUB](https://github.com/jolav/freeCodeCamp)
 
 ---
@@ -16,5 +16,5 @@
 
 ![Maintained NO](https://img.shields.io/badge/Maintained%3F-no-red.svg)  
 
-[Demo online](https://freecodecamp.codetabs.com/old)  
+[Demo online](https://jolav.me/freecodecamp/old)  
 [Github](https://github.com/jolav/freeCodeCamp/tree/master/old)

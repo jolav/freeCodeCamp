@@ -377,7 +377,7 @@ class Profile extends React.Component {
       <div className="plugin" style={a}>
         <h2>NAME => {this.props.profile.name}</h2>
         <h2>AVATAR => &nbsp;
-          <img style={logo} alt="logo" src={this.props.profile.logo} />
+        <img style={logo} alt="logo" src={this.props.profile.logo} />
         </h2>
         <h2>userID => {this.props.profile.idTwitter}</h2>
       </div>
@@ -416,15 +416,15 @@ class Footer extends React.Component {
         <hr />
         <small>
           <strong>
-            <a href="https://freecodecamp.codetabs.com">View all FreeCodeCamp Projects</a>
+            <a href="https://jolav.me/freecodecamp/old">View all FreeCodeCamp Projects</a>
           </strong>
           <br />
         </small>
         <small>
           <img className="logo" style={logo} alt="" src="/_assets/icons/jolav32.png" />
           <strong> Jolav &copy; 2017 -
-            <a href="https://github.com/jolav/freeCodeCamp"> View on GitHub
-            </a> -
+          <a href="https://github.com/jolav/freeCodeCamp/tree/master/old"> View on GitHub
+          </a> -
           </strong>
         </small>
         <hr />
