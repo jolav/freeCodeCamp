@@ -4,12 +4,11 @@
 
 # FREECODECAMP CURRICULUM
 
-![Maintained YES](https://jolav.me/_img/code/maintained-yes.svg)  
+`NEW` or `REFURBISHED` ![Maintained YES](https://jolav.me/_img/code/maintained-yes.svg)  
 
 [DEMO ONLINE](https://jolav.me/freecodecamp)  
-[GITHUB](https://github.com/jolav/freeCodeCamp)
 
-* **FRONTEND**  
+## **FRONTEND**  
 
 | RESPONSIVE WEB DESIGN | JAVASCRIPT | FRONT END LIBRARIES |
 | :---:         |     :---:      |          :---: |
@@ -20,17 +19,17 @@
 | [Portfolio](https://jolav.me/freecodecamp/old/front-end/portfolio/portfolio.html) | |[Pomodoro Clock](https://jolav.me/freecodecamp/old/front-end/pomodoro/pomodoro.html) |
 
 
-* **DATA VISUALIZATION**
+## **DATA VISUALIZATION**
 
 | DATA | 
 | :---: | 
 | [Bar chart](https://jolav.me/freecodecamp/old/data/bar-chart/bar.html) |
 | [Scatterplot Graph](https://jolav.me/freecodecamp/old/data/scatterplot/scatterplot.html) |
 |   [Heat Map](https://jolav.me/freecodecamp/old/data/heat-map/heat.html) |
-| ~~Choropleth Map~~  |
+| [Choropleth Map](https://jolav.me/freecodecamp/data/choropleth/choropleth.html) `NEW` |
 | ~~Treemap Diagram~~  |
 
-* **BACKEND**
+## **BACKEND**
 
 | API & MICROSERVICES | SECURITY & QUALITY |
 | :---: | :---: | 
@@ -40,7 +39,7 @@
 | ~~Exercise Tracker~~ | ~~Stock Price Checker~~ |
 | [File Metadata](https://jolav.me/freecodecamp/old/apis/file/file.html) | ~~Anonymous Message Board~~ |
 
-* **TAKE HOME**
+## **TAKE HOME**
 
 | FRONT END | FULL STACK |
 | :---: | :---: | 
@@ -53,7 +52,7 @@
 | [Recipe Box](https://jolav.me/freecodecamp/old/data/recipe-box/recipe.html)| [Voting App](https://jolav.me/freecodecamp/old/apps/voting/voting.html)|
 | [Game of Life](https://jolav.me/freecodecamp/old/data/game-of-life/life.html)| ~~Pong Game~~ |
 |  [Roguelike Dungeon Game](https://jolav.me/freecodecamp/old/data/roguelike/rogue.html)| ~~Light Bright App~~ |
-|  [National Contiguity with Force Directed Graph](https://jolav.me/freecodecamp/old/data/country-borders/flags.html) | 
+|  [National Contiguity Graph](https://jolav.me/freecodecamp/old/data/country-borders/flags.html) | 
 | [Meteorite World Map](https://jolav.me/freecodecamp/old/data/meteor-landing/meteor.html)| 
 
 

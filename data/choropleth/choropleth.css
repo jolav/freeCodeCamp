@@ -1,0 +1,74 @@
+body {
+  font-family: 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  max-width: 960px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  color: #404040;
+}
+
+.container {
+  border: 1px solid #cecece;
+  box-shadow: 0px 8px 5px -5px #777777, 0 8px 5px #a9a9a9;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.chart {
+  border: 1px solid #cecece;
+}
+
+.notes {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.notes a {
+  color: #375EAB;
+  text-decoration: none;
+}
+
+#tooltip {
+  font-size: 0.85em;
+  position: absolute;
+  padding: 5px;
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  margin: 10px 0px 0px 30px;
+  text-align: center;
+}
+
+#tooltip p {
+  line-height: 1em;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+.county-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}

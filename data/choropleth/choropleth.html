@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Data Choropleth Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Data Visualization Projects: Visualize Data with a Choropleth Map" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/choropleth.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./choropleth.css">
+
+  <!-- space before :hover allow to only select one county -->
+  <style>
+    .counties :hover {
+      fill: #d9534f;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="head">
+        <h2>United States Educational Attainment</h2>
+        <div>Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</div>
+      </div>
+      <div class="chart">
+        <svg class="choroplethMap"></svg>
+      </div>
+
+      <div id="tooltip" class="title hidden">
+        <strong>
+          <span id="county">county</span>
+        </strong>
+        <br>
+        <span id="state">state</span>
+        <br>
+        <span id="percentage">percentage</span>
+      </div>
+
+      <div class="notes">Source:
+        <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/" target="_blank">USDA Economic Research Service</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  -->
+
+  <!-- Last version D3 -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="./choropleth.js"></script>
+
+
+</body>
+
+</html>
