@@ -35,7 +35,7 @@ body {
   background-color: #add536;
   color: #404040;
   border-radius: 5px;
-  font-weight: bol;
+  font-weight: bold;
   font-size: 0.8em;
   vertical-align: middle;
 }
@@ -97,6 +97,7 @@ a, a:visited {
 
 a:hover {
   color: lightcoral;
+  color: orange;
 }
 
 li a:hover {

@@ -1,0 +1,100 @@
+body {
+  font-family: 'Maven Pro', 'arial', sans-serif;
+  background-color: #fafafa;
+  font-size: 1em;
+  margin: auto;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+}
+
+.controls {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Chewy";
+  font-size: 1.2em;
+}
+
+.titleContainer {
+  margin-top: 5px;
+}
+
+.title {
+  padding: 0px 5px;
+  border-radius: 5px;
+  border: 1px solid #82BF56;
+  background-color: #82BF56;
+  color: #fafafa;
+  margin-right: 20px;
+}
+
+.option {
+  padding: 5px 10px;
+  margin: 0px 0px 0px 0px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  /*background-color: #82BF56;*/
+}
+
+.option+.option {
+  border-left: 0px;
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+.keyboard {
+  padding-top: 20px;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+}
+
+.drum {
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.piano {
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.drumPad {
+  margin: 10px;
+  flex-basis: 100px;
+  font-size: 2.4em;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: deepskyblue;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 1px black;
+  transition: background-color 0.2s;
+}
+
+.pressed {
+  background-color: orange;
+  transform: scale(1.1, 1.1);
+}
+
+.clip {
+  display: block;
+  font-size: 0.6em;
+}
