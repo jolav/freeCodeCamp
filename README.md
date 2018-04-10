@@ -2,7 +2,7 @@
 ![BSD-3-Clause](https://jolav.me/_img/code/bsd-3-clause.svg)  
 ![Ask Me Anything !](https://jolav.me/_img/code/ask-me.svg)
 
-# FREECODECAMP CURRICULUM
+# CURRICULUM
 
 `NEW` or `REFURBISHED` ![Maintained YES](https://jolav.me/_img/code/maintained-yes.svg)  
 
@@ -27,7 +27,7 @@
 | [Scatterplot Graph](https://jolav.me/freecodecamp/old/data/scatterplot/scatterplot.html) |
 |   [Heat Map](https://jolav.me/freecodecamp/old/data/heat-map/heat.html) |
 | [Choropleth Map](https://jolav.me/freecodecamp/data/choropleth/choropleth.html) `NEW` |
-| ~~Treemap Diagram~~  |
+| [Treemap Diagram](https://jolav.me/freecodecamp/data/treemap/treemap.html) `NEW`  |
 
 ## **BACKEND**
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Data Treemap Diagram</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Data Visualization Projects: Visualize Data with a Treemap Diagram" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/treemap.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./treemap.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="head">
+        <div class="option" id="kick">
+          Kickstarter
+        </div>
+        <div class="option" id="movie">
+          Movies
+        </div>
+        <div class="option" id="games">
+          Video Games
+        </div>
+      </div>
+      <span class="info" id="info">Info</span>
+
+      <div class="chart">
+        <svg width="940" height="590" id="treemap"></svg>
+      </div>
+
+      <div id="tooltip" class="hidden">
+        <strong>
+          <span id="name">Name</span>
+        </strong>
+        <br>
+        <span id="category">Category</span>
+        <br>
+        <span id="value">Value</span>
+      </div>
+
+      <div class="legendBox">
+        <svg width="500" id="legend"></svg>
+      </div>
+
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  -->
+
+  <!-- Last version D3 -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="./treemap.js"></script>
+
+
+</body>
+
+</html>
