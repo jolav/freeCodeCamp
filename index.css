@@ -1,0 +1,165 @@
+@media only screen and (max-width: 681px) {
+  .big {
+    display: none
+  }
+  .small {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .big {
+    display: inline-block
+  }
+  .small {
+    display: none;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "arial", sans-serif;
+  background-color: #eee;
+  font-size: 0.90em;
+  line-height: 1.2em;
+  color: #404040;
+  margin: 0px auto;
+  max-width: 960px;
+}
+
+.newLabel {
+  padding: 0px 5px 1px 5px;
+  background-color: #add536;
+  color: #404040;
+  border-radius: 5px;
+  font-weight: bol;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+/* HEAD */
+
+h1 {
+  margin: 0px;
+}
+
+.header {
+  padding-top: 2%;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile {
+  padding: 10px 0px;
+}
+
+.curriculum {
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+}
+
+.curriculum div {
+  padding-top: 10px;
+}
+
+.curriculum h2, .curriculum h3, .header h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* GENERIC */
+
+.verticalImage {
+  vertical-align: middle;
+}
+
+.horizontalImage {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.centerText {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+a:hover {
+  color: lightcoral;
+}
+
+li a:hover {
+  background-color: #375EAB;
+  color: #fafafa;
+  border-radius: 5px;
+  padding: 0px;
+}
+
+.txtH {
+  text-align: center;
+}
+
+/* BODY */
+
+.old {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px 0px 10px 0px;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.certificate {
+  padding: 15px 20px;
+  font-size: 1.1em;
+}
+
+.cert {
+  color: #fafafa;
+  border: 1px solid #64b664;
+  border-radius: 5px;
+  background-color: #64b664;
+  padding: 5px 5px;
+  margin: 0px;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  /* to avoid bullets */
+  display: inline;
+  /* Chrome numbers of ol inside text */
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+a.not {
+  pointer-events: none;
+  text-decoration: line-through;
+  color: #404040 !important;
+}
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
