@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Product Landing Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Applied Responsive Web Design Projects: Build a Product Landing Page" />
+
+  <!-- Poppins + Chewy -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Chewy" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/golang.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./landing.css">
+
+</head>
+
+<body>
+
+  <header id="header" class="navbar">
+    <nav id="nav-bar">
+      <div class="leftNav">
+        <span class="left-nav-link">Golang</span>
+        <img id="header-img" src="/_assets2/icons/golang.ico" alt="">
+      </div>
+      <div class="rightNav">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#start">Get started</a>
+        <a class="nav-link" href="#download">Downloads</a>
+        <a class="nav-link" href="#moreinfo">Info</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="features">
+    <span class="sectionTitle">Features</span>
+    <div class="list">
+      <ul>
+        <li>Statically typed and scalable to large systems </li>
+        <li>Be productive and readable</li>
+        <li>Support networking and multiprocessing</li>
+        <li>Optional concise variable declaration and initialization through type inference</li>
+        <li>Fast compilation times</li>
+        <li>Remote package management (go get) and online package documentation</li>
+        <li>Built-in concurrency primitives: light-weight processes (goroutines)and channels</li>
+        <li>An interface system in place of virtual inheritance, and type embedding instead of non-virtual inheritance</li>
+        <li>A toolchain that, by default, produces statically linked native binaries without external dependencies.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="start">
+    <span class="sectionTitle">Get Started</span>
+    <div class="startVideo">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CF9S4QZuV30" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="download">
+    <span class="sectionTitle">Downloads</span>
+    <div class="download">
+      <div class="down">
+        <a class="downloadBox" href="https://storage.googleapis.com/golang/go1.7.5.windows-amd64.msi">
+          <div class="platform">Microsoft Windows</div>
+          <div class="reqs">Windows XP or later, Intel 64-bit processor</div>
+          <div class="filename">go1.7.5.windows-amd64.msi</div>
+        </a>
+      </div>
+
+      <div class="down">
+        <a class="downloadBox" href="https://storage.googleapis.com/golang/go1.7.5.darwin-amd64.pkg">
+          <div class="platform">Apple OS X</div>
+          <div class="reqs">OS X 10.8 or later, Intel 64-bit processor</div>
+          <div class="filename">go1.7.5.darwin-amd64.pkg</div>
+        </a>
+      </div>
+
+      <div class="down">
+        <a class="downloadBox" href="https://storage.googleapis.com/golang/go1.7.5.linux-amd64.tar.gz">
+          <div class="platform">Linux</div>
+          <div class="reqs">Linux 2.6.23 or later, Intel 64-bit processor</div>
+          <div class="filename">go1.7.5.linux-amd64.tar.gz</div>
+        </a>
+      </div>
+
+      <div class="down">
+        <a class="downloadBox" href="https://storage.googleapis.com/golang/go1.7.5.src.tar.gz">
+          <div class="platform">Source</div>
+          <div class="filename">go1.7.5.src.tar.gz</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="moreinfo">
+    <form id="form" method="GET" action="https://www.freecodecamp.com/email-submit">
+      <fieldset class="field">
+        <legend>Subscribe to Newsletter to receive all news</legend>
+        <label class="formBlock">
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </label>
+        <label class="formBlock">
+          <input id="submit" type="submit" value="Subscribe to Newsletter" class="btn" />
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  -->
+
+</body>
+
+</html>

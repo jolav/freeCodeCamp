@@ -13,8 +13,8 @@
 | RESPONSIVE WEB DESIGN | JAVASCRIPT | FRONT END LIBRARIES |
 | :---:         |     :---:      |          :---: |
 | [Tribute Page](https://jolav.me/freecodecamp/old/front-end/tribute/tribute.html) | [Basic algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |  [Random Quote Machine](https://jolav.me/freecodecamp/old/front-end/quote/quote.html) |
-| [Survey Form](https://jolav.me/freecodecamp/responsive/survey-form/form.html) | [Intermediate Algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |  [Markdown Previewer](https://jolav.me/freecodecamp/old/data/markdown-previewer/markdown.html)  |
-| ~~Product Landing Page~~ | [Algorithms & Data Structures](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |  [Drum Machine](https://jolav.me/freecodecamp/front-end/drum-machine/drum.html) `NEW` |  
+| [Survey Form](https://jolav.me/freecodecamp/responsive/survey-form/form.html) `NEW` | [Intermediate Algorithms](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |  [Markdown Previewer](https://jolav.me/freecodecamp/old/data/markdown-previewer/markdown.html)  |
+| [Product Landing Page](https://jolav.me/freecodecamp/responsive/landing-page/landing.html) `NEW` | [Algorithms & Data Structures](https://github.com/jolav/freeCodeCamp/tree/master/old/front-end/algorithm) |  [Drum Machine](https://jolav.me/freecodecamp/front-end/drum-machine/drum.html) `NEW` |  
 | ~~Technical Doc Page~~ | |  [Javascript Calculator](https://jolav.me/freecodecamp/old/front-end/calculator/calculator.html) |
 | [Portfolio](https://jolav.me/freecodecamp/old/front-end/portfolio/portfolio.html) | |[Pomodoro Clock](https://jolav.me/freecodecamp/old/front-end/pomodoro/pomodoro.html) |
 
