@@ -36,7 +36,7 @@
 | [Timestamp](https://jolav.me/freecodecamp/old/apis/time/time.html) | ~~Metric Imperial Converter~~ |
 | [Request Header Parser](https://jolav.me/freecodecamp/old/apis/parser/parser.html) | ~~Issue Tracker~~ |
 | [URL Shortener](https://jolav.me/freecodecamp/old/apis/url/url.html) | ~~Personal Library~~ |
-| ~~Exercise Tracker~~ | ~~Stock Price Checker~~ |
+| [Exercise Tracker](https://jolav.me/freecodecamp/apis/exercise-tracker/exercise.html) `NEW` | ~~Stock Price Checker~~ |
 | [File Metadata](https://jolav.me/freecodecamp/old/apis/file/file.html) | ~~Anonymous Message Board~~ |
 
 ## **TAKE HOME**

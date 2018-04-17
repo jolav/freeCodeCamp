@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Exercise Tracker API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Api and Microservice Projects: Exercise Tracker Microservice" />
+
+  <!-- Maven Pro -->
+  <link href="https://fonts.googleapis.com/css?family=+Sans" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/api32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./exercise.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Exercise Tracker API Docs</h1>
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        You can create a user by posting form data username to
+        <code>/exercise/v1/newUser</code> and returned will be an object with username and _id.
+      </li>
+      <li>
+        You can get all users
+        <code>/exercise/v1/users</code>.
+      </li>
+      <li>
+        You can add an exercise to any user by posting form data username, description, duration.
+        <code>/exercise/v1/add</code> no date supplied it will use current date.
+      </li>
+      <li>
+        You can retrieve a full exercise log of any user by getting
+        <code>/exercise/api/log</code> with a parameter of username.
+      </li>
+      <li>
+        You can retrieve part of the log of any user by also passing optional parameters.
+        <code>&from= &to=</code> use date format yyyy-mm-dd and
+        <code>&limit=</code> is a integer
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show all users
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v2-jolav.glitch.me/exercise/v1/users">https://apis-v2-jolav.glitch.me/exercise/v1/users</a>
+        </code>
+      </li>
+      <li>Get users exercise log
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v2-jolav.glitch.me/exercise/v1/log?user=aw34">https://apis-v2-jolav.glitch.me/exercise/v1/log?user=aw34</a>
+        </code>
+        <br>
+        <code>GET 
+          <a class="link" href="https://apis-v2-jolav.glitch.me/exercise/v1/log?user=aw34&from=2014-01-01&to=2017-12-31&limit=2">https://apis-v2-jolav.glitch.me/exercise/v1/log?user=aw34&from=2014-01-01&to=2017-12-31&limit=2</a>
+        </code>
+      </li>
+
+      <li>Create a new user
+        <br>
+        <code>POST /exercise/v1/newUser</code>
+        <form action="./exercise/v1/newUser" method="post">
+          <input id="newUsername" type="text" name="username" placeholder="username" required>
+          <input id="addUser" class="but" type="submit" value="Send">
+        </form>
+      </li>
+
+      <div class="listTable">
+        <div class="listTitle">USER LIST</div>
+        <div id="userList"></div>
+      </div>
+
+      <li>Add exercises
+        <br>
+        <code>POST /exercise/v1/add</code>
+        <form action="./exercise/v1/add" method="post">
+          <input id="user" type="text" name="username" placeholder="username" required>
+          <input id="desc" type="text" name="description" placeholder="description" required>
+          <input id="min" type="number" step="1" min="0" name="duration" placeholder="duration (mins.)" required>
+          <input id="date" type="text" name="date" placeholder="date (yyyy-mm-dd)">
+          <input id="addExercise" class="but" type="submit" value="Send">
+        </form>
+      </li>
+
+      <div class="listTable">
+        <div class="listTitle">EXERCISE LIST</div>
+        <div id="exerciseList"></div>
+      </div>
+    </ul>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <script src="./exercise.js"></script>
+
+</body>
+
+</html>
