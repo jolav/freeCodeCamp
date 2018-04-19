@@ -33,7 +33,7 @@
 
 | API & MICROSERVICES | SECURITY & QUALITY |
 | :---: | :---: | 
-| [Timestamp](https://jolav.me/freecodecamp/old/apis/time/time.html) | ~~Metric Imperial Converter~~ |
+| [Timestamp](https://jolav.me/freecodecamp/old/apis/time/time.html) | [Metric Imperial Converter](https://jolav.me/freecodecamp/quality/metric-imperial/converter.html) `NEW` |
 | [Request Header Parser](https://jolav.me/freecodecamp/old/apis/parser/parser.html) | ~~Issue Tracker~~ |
 | [URL Shortener](https://jolav.me/freecodecamp/old/apis/url/url.html) | ~~Personal Library~~ |
 | [Exercise Tracker](https://jolav.me/freecodecamp/apis/exercise-tracker/exercise.html) `NEW` | ~~Stock Price Checker~~ |

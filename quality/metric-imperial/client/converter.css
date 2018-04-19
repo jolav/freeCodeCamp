@@ -1,0 +1,111 @@
+body {
+  font-family: 'PT Sans', 'arial', sans-serif;
+  background-color: #eee;
+  font-size: 0.9em;
+  margin: auto;
+  max-width: 900px;
+  color: #404040;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.container1 h3 {
+  padding-bottom: 5px;
+}
+
+.container1, .container2 {
+  line-height: 1.2em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 5px 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+form {
+  padding: 10px;
+}
+
+code {
+  font-size: 1.1em;
+}
+
+.but {
+  margin-top: 5px;
+  color: #375EAB;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.but:hover {
+  color: lightblue;
+}
+
+a.link {
+  color: #375EAB;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.link:hover {
+  color: lightskyblue;
+}
+
+.verticalImage {
+  vertical-align: middle;
+}
+
+/* HR */
+
+hr {
+  color: #ededed;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* FRONT END */
+
+.inputText {
+  vertical-align: middle;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s, border 0.3s;
+  margin-right: 20px;
+}
+
+.inputText:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.convertBut {
+  vertical-align: middle;
+  border-radius: 5px;
+  background-color: #5bc0de;
+  border: none;
+  color: #fafafa;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.convertBut:hover {
+  color: #404040;
+  cursor: pointer;
+}
+
+pre#jsonRes {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: start !important;
+}

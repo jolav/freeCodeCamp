@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Metric-Imperial Converter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Information Security and Quality Assurance Projects : Metric-Imperial Converter"
+  />
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/metric32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./converter.css">
+
+</head>
+
+<body>
+
+
+  <h1>
+    <img class="verticalImage" src="/_assets2/icons/metric64.png">
+    <span>Metric-Imperial Converter</span>
+  </h1>
+
+  <div class="container1">
+
+    <h3>Front End</h3>
+
+    <div class="frontEnd">
+      <input id="inputText" class="inputText" type="text" name="input" placeholder="3.1mi">
+      <span class="convertBut">Convert</span>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes"></pre>
+    </div>
+
+  </div>
+
+  <div class="container2">
+
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        I will help prevent the client from trying to guess(sniff) the MIME type.
+      </li>
+      <li>
+        I will prevent cross-site scripting (XSS) attacks.
+      </li>
+      <li>
+        I can
+        <b>GET</b>
+        <code>/api/convert</code> with a singler parameter containing an accepted number and unit and have it converted.
+      </li>
+      <li>
+        Hint: Split the input by looking for the index of the first character.
+      </li>
+      <li>
+        I can convert 'gal' to 'L' and vice versa.
+        <b>(1 gal to 3.78541 L)</b>
+      </li>
+      <li>
+        I can convert 'lbs' to 'kg' and vice versa.
+        <b>(1 lbs to 0.453592 kg)</b>
+      </li>
+      <li>
+        I can convert 'mi' to 'km' and vice versa.
+        <b>(1 mi to 1.60934 km)</b>
+      </li>
+      <li>
+        If my unit of measurement is invalid, returned will be 'invalid unit'.
+      </li>
+      <li>
+        If my number is invalid, returned with will 'invalid number'.
+      </li>
+      <li>
+        If both are invalid, return will be 'invalid number and unit'.
+      </li>
+      <li>
+        I can use fractions, decimals or both in my parameter(ie. 5, 1/2, 2.5/6), but if nothing is provided it will default to 1.
+      </li>
+      <li>
+        My return will consist of the initNum, initUnit, returnNum, returnUnit, and string spelling out units in format
+        <code> {initNum} {initial_Units} converts to {returnNum} {return_Units}</code> with the result rounded to 5 decimals.
+      </li>
+      <li>
+        All 16 unit tests are complete and passing.
+      </li>
+      <li>
+        All 5 functional tests are complete and passing.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>
+        <code>GET 
+          <a class="link" href="https://metric-imperial-v2.glitch.me/v1/convert?input=4gal">https://metric-imperial-v2.glitch.me/v1/convert?input=4gal</a>
+        </code>
+      </li>
+      <li>
+        <code>GET 
+          <a class="link" href="https://metric-imperial-v2.glitch.me/v1/convert?input=1/2km">https://metric-imperial-v2.glitch.me/v1/convert?input=1/2km</a>
+        </code>
+      </li>
+      <li>
+        <code>GET 
+          <a class="link" href="https://metric-imperial-v2.glitch.me/v1/convert?input=5.4/3lbs">https://metric-imperial-v2.glitch.me/v1/convert?input=5.4/3lbs</a>
+        </code>
+      </li>
+      <li>
+        <code>GET 
+          <a class="link" href="https://metric-imperial-v2.glitch.me/v1/convert?input=kg">https://metric-imperial-v2.glitch.me/v1/convert?input=kg</a>
+        </code>
+      </li>
+    </ul>
+    <h3>Example Output:</h3>
+    <pre>
+    {
+      "InitNum": 3.1,
+      "InitUnit": "mi",
+      "ReturnNum": 4.98895,
+      "ReturnUnit": "km",
+      "Text": "3.1 miles converts to 4.98895 kilometers"
+    }   
+    </pre>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <script src="./converter.js"></script>
+
+</body>
+
+</html>
