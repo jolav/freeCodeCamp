@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Stock Price Checker </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Information Security and Quality Assurance Projects : Stock Price Checker "
+  />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/stock64.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./stock.css">
+
+</head>
+
+<body>
+
+  <h1>
+    <img class="verticalImage" src="/_assets2/icons/stock64.png">
+    <span>Stock Price Checker</span>
+  </h1>
+
+  <div class="container1">
+    <h3>Front End</h3>
+
+    <div class="frontEnd g1">
+      <div class="frontTitle">Single Price and Total Likes</div>
+      <div class="inputs">
+        <input class="inputText" type="text" placeholder="MSFT">
+      </div>
+      <div class="others">
+        <input type="checkbox" id="like1" value=true>Like?
+        <span class="convertBut">Get Price!</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes1"></pre>
+    </div>
+
+    <div class="frontEnd g2">
+      <div class="frontTitle">Compare prices and relative likes</div>
+      <div class="inputs">
+        <input class="inputText" type="text" placeholder="AAPL">
+        <input class="inputText" type="text" placeholder="MMM">
+      </div>
+      <div class="others">
+        <input type="checkbox" id="like2" value=true>Like both?
+        <span class="convertBut">Get Prices!</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes2">
+      </pre>
+    </div>
+
+  </div>
+
+  <div class="container2">
+
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        Set the content security policies to only allow loading of scripts and css from your server.
+      </li>
+      <li>
+        I can
+        <b>GET</b>
+        <code>/v1/stock-prices</code> with form data containing a
+        <strong>stock</strong> ticker and receive back an object
+        <strong>stockData</strong>.
+      </li>
+      <li>
+        In
+        <strong>stockData</strong>, I can see the
+        <strong>stock</strong>(string, the ticker),
+        <strong>price</strong>(decimal in string format), and
+        <strong>likes</strong>(int).
+      </li>
+      <li>
+        I can also pass along field
+        <strong>like</strong> as
+        <b>true</b>(boolean) to have my like added to the stock(s). Only 1 like per ip should be accepted.
+      </li>
+      <li>
+        If I pass along 2 stocks, the return object will be an array with both stock's info but instead of
+        <strong>likes</strong>, it will display
+        <strong>rel_likes</strong>(the difference betwwen the likes) on both.
+      </li>
+      <li>
+        All 5 functional tests are complete and passing.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>
+        <code>GET 
+          <a class="link" href="https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog">https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog</a>
+        </code>
+      </li>
+      <li>
+        <code>GET 
+          <a class="link" href="https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog&amp;like=true
+            ">https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog&amp;like=true
+          </a>
+        </code>
+      </li>
+      <li>
+        <code>GET 
+          <a class="link" href="https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog&amp;stock=msft">https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog&amp;stock=msft</a>
+        </code>
+      </li>
+      <li>
+        <code>GET 
+          <a class="link" href="https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog&amp;stock=msft&amp;like=true">https://stock-checker-v2.glitch.me/v1/stock-prices?stock=goog&amp;stock=msft&amp;like=true</a>
+        </code>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container2">
+    <h3>Example Output:</h3>
+    <div>
+      <pre>
+{
+  "stockData":[
+  {
+    "stock":"MSFT",
+    "price":"62.30",
+    "rel_likes":-1},
+  {
+    "stock":"GOOG",
+    "price":"786.90",
+    "rel_likes":1
+  }]
+}
+    </pre>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <script src="./stock.js"></script>
+
+</body>
+
+</html>

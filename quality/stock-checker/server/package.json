@@ -1,0 +1,24 @@
+{
+  "name": "stock-price-checker",
+  "version": "0.0.1",
+  "description": "fcc stock price checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js --timeout 15000",
+    "start": "node stock.js"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "author": "jolav",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0"
+  }
+}
