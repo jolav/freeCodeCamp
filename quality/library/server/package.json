@@ -1,0 +1,27 @@
+{
+  "name": "personal-library",
+  "version": "0.0.1",
+  "description": "fcc personal library",
+  "main": "library.js",
+  "scripts": {
+    "test": "mocha test/*.js --timeout 15000",
+    "start": "node library.js"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "author": "jolav",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "mongodb": "^3.0.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0"
+  }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Personal Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Information Security and Quality Assurance Projects :Personal Library" />
+
+  <!-- PT Sans -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/library64.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./library.css">
+
+</head>
+
+<body>
+
+  <h1>
+    <img class="verticalImage" src="/_assets2/icons/library64.png">
+    <span>Personal Library</span>
+  </h1>
+
+  <div class="container1">
+    <div class="frontEnd g1">
+      <div class="frontTitle">List books</div>
+      <div class="inputs">
+        <span id="b1" class="actionBut">Get All</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes1"></pre>
+    </div>
+
+    <div class="listTable">
+      <div id="bookList"></div>
+    </div>
+
+    <div class="frontEnd g2">
+      <div class="frontTitle">Show a book</div>
+      <div class="inputs">
+        <input id="t2" class="inputText" type="text" placeholder="bookID">
+        <span id="b2" class="actionBut">Show book</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes2"></pre>
+    </div>
+
+    <hr>
+
+    <div class="frontEnd g3">
+      <div class="frontTitle">Add a book</div>
+      <div class="inputs">
+        <input id="t3" class="inputText" type="text" placeholder="book title">
+        <span id="b3" class="actionBut">Add book</span>
+      </div>
+    </div>
+
+    <div class="frontEnd g4">
+      <div class="frontTitle">Add a comment</div>
+      <div class="inputs">
+        <input id="t41" class="inputText" type="text" placeholder="bookID">
+        <input id="t42" class="inputText" type="text" placeholder="comment">
+        <span id="b4" class="actionBut">Add comment</span>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="frontEnd g5">
+      <div class="frontTitle">Delete all books</div>
+      <div class="inputs">
+        <span id="b5" class="actionBut">Kill all</span>
+      </div>
+    </div>
+
+    <div class="frontEnd g6">
+      <div class="frontTitle">Delete one book</div>
+      <div class="inputs">
+        <input id="t6" class="inputText" type="text" placeholder="bookID">
+        <span id="b6" class="actionBut">Delete one</span>
+      </div>
+    </div>
+
+    <hr>
+
+  </div>
+
+  <div class="container2">
+
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        Nothing from my website will be cached in my client as a security measure.
+      </li>
+      <li>
+        I will see that the site is powered by 'PHP 4.2.0' even though it isn't as a security measure.
+      </li>
+      <li>
+        I can
+        <b>post</b> a
+        <code>title</code> to /library/v1/books/ to add a book and returned will be the object with the
+        <code>title</code> and a unique
+        <code>_id</code>.
+      </li>
+      <li>
+        I can
+        <b>get</b> /library/v1/books/ to retrieve a list of all books containing
+        <code>title</code>,
+        <code>_id</code>,
+        <code>commentcount</code>.
+      </li>
+      <li>
+        I can
+        <b>get</b> /library/v1/books//{_id} to retrieve a single object of a book containing
+        <code>title</code>,
+        <code>_id</code>, and
+        <code>comments</code> (empty array if no comments present).
+      </li>
+      <li>
+        I can
+        <b>post</b> a
+        <code>comment</code> to /library/v1/books//{_id} to add a comment to a book and returned will be the books object similar to
+        <b>get</b> /library/v1/books//{_id}.
+      </li>
+      <li>
+        I can
+        <b>delete</b> /library/v1/books//{_id} to delete a book from the collection. Returned will be 'delete successful' if
+        successful.
+      </li>
+      <li>
+        If I try to request a book that doesn't exist I will get a 'no book exists' message.
+      </li>
+      <li>
+        I can send
+        <b>delete</b> request to /library/v1/books/ to delete all books in the database. Returned will be 'complete delete successful'
+        if successful. For practical reasons the first book can't be deleted
+      </li>
+    </ol>
+
+    <div class="image">
+      <img class="endpoints" src="/_assets2/img/libraryEndpoints.png">
+    </div>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show all books
+        <br>
+        <code>GET 
+          <a class="link" href="https://personal-library-v2.glitch.me/v1/books/">https://personal-library-v2.glitch.me/v1/books/</a>
+        </code>
+      </li>
+      <li>Show a book
+        <br>
+        <code>GET 
+          <a class="link" href="https://personal-library-v2.glitch.me/v1/books/2">https://personal-library-v2.glitch.me/v1/books/2</a>
+        </code>
+      </li>
+    </ul>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <script src="./library.js"></script>
+
+</body>
+
+</html>
