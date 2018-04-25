@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "5adef1369ca8f5775c451b96",
+    "projectName": "test1",
+    "issues": [
+      {
+        "id": -1,
+        "title": "Negative ID Issue",
+        "text": "Cant delete this negative ID issue for practical reasons",
+        "creationDate": "Mon, 24 Jul 2017 12:24:22 +0200",
+        "latestUpdate": "Mon, 24 Jul 2017 12:24:22 +0200",
+        "author": "jolav",
+        "assignee": "fcc",
+        "isOpen": true
+      },
+      {
+        "id": 83,
+        "title": "change Title",
+        "text": "my info",
+        "creationDate": "Mon, 24 Jul 2017 16:00:18 +0200",
+        "latestUpdate": "Mon, 24 Jul 2017 16:35:06 +0200",
+        "author": "my user",
+        "assignee": "manitou",
+        "isOpen": false
+      }
+    ]
+  },
+  {
+    "_id": "5adefe269ca8f5775c463eaa",
+    "projectName": "test2",
+    "issues": [
+      {
+        "id": 0,
+        "title": "title",
+        "text": "text",
+        "creationDate": "creationDate",
+        "latestUpdate": "latestUpdate",
+        "author": "author",
+        "assignee": "assignee",
+        "isOpen": true
+      }
+    ]
+  }
+]

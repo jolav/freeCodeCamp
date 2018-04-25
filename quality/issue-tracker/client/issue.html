@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Issue Tracker </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Information Security and Quality Assurance Projects :Issue Tracker " />
+
+  <!-- Oxygen -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/issue32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./issue.css">
+
+</head>
+
+<body>
+
+
+  <h1>
+    <img class="verticalImage" src="/_assets2/icons/issue64.png">
+    <span>Issue Tracker</span>
+  </h1>
+
+  <div class="container">
+    <h3>Front End</h3>
+
+    <div class="frontEnd g1">
+      <div class="inputs">
+        <span id="b1" class="actionBut">List all issues</span>
+      </div>
+    </div>
+
+    <div class="response listTable">
+      <div id="jsonRes1"></div>
+    </div>
+
+    <hr>
+
+    <div class="frontEnd g2">
+      <div class="inputs">
+        <input id="t2" class="inputText" type="text" placeholder="issueId">
+        <span id="b2" class="actionBut">List issue</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes2"></pre>
+    </div>
+
+    <hr>
+
+    <div class="frontEnd g3">
+      <div class="inputs left">
+        <input id="t31" class="inputText" type="text" placeholder="*title">
+        <input id="t32" class="inputText" type="text" placeholder="*text">
+        <input id="t33" class="inputText" type="text" placeholder="*createdBy">
+        <input id="t34" class="inputText" type="text" placeholder="assignedTo">
+      </div>
+      <div class="others right">
+        <span id="b3" class="actionBut">Create issue</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes3"></pre>
+    </div>
+
+    <hr>
+
+    <div class="frontEnd g4">
+      <div class="inputs left">
+        <input id="t45" class="inputText" type="text" placeholder="*issueID">
+        <input id="t41" class="inputText" type="text" placeholder="title">
+        <input id="t42" class="inputText" type="text" placeholder="text">
+        <input id="t43" class="inputText" type="text" placeholder="createdBy">
+        <input id="t44" class="inputText" type="text" placeholder="assignedTo">
+        <div class="closeCheck">
+          <input type="checkbox" id="close" value=true>Close Issue
+        </div>
+      </div>
+      <div class="others right">
+        <span id="b4" class="actionBut">Update issue</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes4"></pre>
+    </div>
+
+    <hr>
+
+    <div class="frontEnd g5">
+      <div class="inputs">
+        <input id="t5" class="inputText" type="text" placeholder="issueID">
+        <span id="b5" class="actionBut">Delete issue</span>
+      </div>
+    </div>
+
+    <div class="response">
+      <pre id="jsonRes5"></pre>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="container">
+
+    <h3>User Stories:</h3>
+    <ol>
+      <li>
+        Prevent cross site scripting(XSS attack).
+      </li>
+      <li>
+        I can
+        <b>POST</b>
+        <code>/issues/v1/{projectname}</code> with form data containing required
+        <i>issueTitle</i>,
+        <i>issueText</i>,
+        <i>createdBy</i>, and optional
+        <i>assignedTo</i> and
+        <i>statusText</i>.
+      </li>
+      <li>
+        The object saved (and returned) will include all of those fields (blank for optional no input) and also include
+        <i>createdOn</i>(date/time),
+        <i>updatedOn</i>(date/time),
+        <i>open</i>(boolean, true for open, false for closed), and
+        <i>id</i>.
+      </li>
+      <li>
+        I can
+        <b>PUT</b>
+        <code>/issues/v1/{projectname}</code> with a
+        <i>id</i> and any fields in the object with a value to object said object. Returned will be 'successfully updated' or
+        'could not update '+id. This should always update
+        <i>updated_on</i>. If no fields are sent return 'no updated field sent'.
+      </li>
+      <li>
+        I can
+        <b>DELETE</b>
+        <code>/issues/v1/{projectname}</code> with a
+        <i>id</i> to completely delete an issue. If no id is sent return 'id error', success: 'deleted '+id, failed: 'could
+        not delete '+id.
+      </li>
+      <li>
+        I can
+        <b>GET</b>
+        <code>/issues/v1/{projectname}</code> for an array of all issues on that specific project with all the information for each issue as was returned when
+        posted.
+      </li>
+      <li>
+        All 7 functional tests are complete and passing.
+      </li>
+    </ol>
+
+    <h3>Example Usage:</h3>
+    <ul class="examples">
+      <li>Show all issues from project "test"
+        <br>
+        <code>GET 
+          <a class="link" href="https://issue-tracker-v2.glitch.ne/v1/project-1/">https://issue-tracker-v2.glitch.me/v1/project-1/</a>
+        </code>
+      </li>
+    </ul>
+
+  </div>
+
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <script src="./issue.js"></script>
+
+</body>
+
+</html>
