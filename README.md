@@ -1,10 +1,11 @@
 
+![Maintained NO](https://jolav.me/_img/code/maintained-no.svg)  
+
+
 ![BSD-3-Clause](https://jolav.me/_img/code/bsd-3-clause.svg)  
 ![Ask Me Anything !](https://jolav.me/_img/code/ask-me.svg)
 
 # **CURRICULUM**
-
-only `NEW` or `REFURBISHED` projects ![Maintained YES](https://jolav.me/_img/code/maintained-yes.svg)  
 
 [DEMO ONLINE](https://jolav.me/freecodecamp)  
 
