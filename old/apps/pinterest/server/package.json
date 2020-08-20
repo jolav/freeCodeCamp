@@ -9,7 +9,7 @@
   "author": "jolav",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^5.0.0",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
